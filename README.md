@@ -1,6 +1,6 @@
 # Android SDK Fastlane Resource
 
-[Concourse](https://concourse.ci) resource providing Android SDK dependencies and fastlane
+[Concourse](https://concourse.ci) resource providing Android SDK dependencies and [fastlane](https://fastlane.tools/)
 
 ## Resource type
 
