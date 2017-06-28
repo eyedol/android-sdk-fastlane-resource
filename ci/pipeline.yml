@@ -1,21 +1,21 @@
 resources:
-  - name: android-sdk-resource
+  - name: android-sdk-fastlane-resource
     type: git
     source:
-      uri: https://github.com/xaethos/android-sdk-resource.git
+      uri: https://github.com/eyedol/android-sdk-fastlane-resource.git
       branch: master
 
-  - name: android-sdk-resource-image
+  - name: android-sdk-fastlate-resource-image
     type: docker-image
     source:
-      repository: xaethos/android-sdk-resource
+      repository: eyedol/android-sdk-fastlane-resource
       username: {{docker-username}}
       password: {{docker-password}}
 
 jobs:
   - name: build
     plan:
-      - get: android-sdk-resource
-      - put: android-sdk-resource-image
+      - get: android-sdk-fastlane-resource
+      - put: android-sdk-fastlane-resource-image
         params:
-          build: android-sdk-resource
+          build: android-sdk-fastlane-resource

@@ -1,4 +1,4 @@
-FROM xaethos/android-sdk-resource:buildroot
+FROM eyedol/android-sdk-fastlane-resource:buildroot
 
 COPY assets/ /opt/resource/
 

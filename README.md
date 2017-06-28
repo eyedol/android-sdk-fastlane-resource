@@ -1,6 +1,6 @@
-# Android SDK Resource
+# Android SDK Fastlane Resource
 
-[Concourse](https://concourse.ci) resource providing Android SDK dependencies.
+[Concourse](https://concourse.ci) resource providing Android SDK dependencies and fastlane
 
 ## Resource type
 
@@ -68,7 +68,7 @@ won't work.
 resource_types:
   - name: android-sdk
     type: docker-image
-    source: {repository: xaethos/android-sdk-resource}
+    source: {repository: eyedol/android-sdk-fastlane-resource}
 
 resources:
   - name: android-sdk-linux
@@ -96,7 +96,7 @@ jobs:
           image_resource:
             type: docker-image
             source:
-              repository: xaethos/android-build
+              repository: eyedol/android-build
               tag: no-sdk
           inputs:
             - name: android-sdk-linux
