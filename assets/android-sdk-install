@@ -6,7 +6,7 @@ if { $argc != 1 } {
 }
 
 set timeout -1
-spawn $env(ANDROID_HOME)/tools/android update sdk --all --no-ui --force --filter $argv
+spawn $env(ANDROID_HOME)/tools/bin/sdkmanager --sdk_root="$ANDROID_HOME" $argv
 
 expect {
   # Accept every license

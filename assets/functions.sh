@@ -1,5 +1,5 @@
 ASSETS_DIR="$(dirname "${BASH_SOURCE[0]}")"
-SDK_ARCHIVE="$ASSETS_DIR/android-sdk-linux.tgz"
+SDK_ARCHIVE="$ASSETS_DIR/android-sdk-linux.zip"
 
 function fail {
   echo "$*"

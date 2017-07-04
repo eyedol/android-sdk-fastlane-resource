@@ -68,7 +68,7 @@ won't work.
 resource_types:
   - name: android-sdk
     type: docker-image
-    source: {repository: eyedol/android-sdk-fastlane-resource}
+    source: {repository: eyedol/android-sdk-manager-resource}
 
 resources:
   - name: android-sdk-linux
