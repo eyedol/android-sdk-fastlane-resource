@@ -1,4 +1,4 @@
-FROM eyedol/android-sdk-fastlane-resource:buildroot
+FROM eyedol/android-sdk-manager-resource:buildroot
 
 COPY assets/ /opt/resource/
 
