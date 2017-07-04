@@ -1,7 +1,7 @@
 FROM java:8-jdk
 
 RUN mkdir -p /opt/resource \
-    && curl -L "sdk-tools-linux-3859397.zip" \
+    && curl -L "https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip" \
     > /opt/resource/android-sdk-linux.zip
 
 RUN apt-get update \
